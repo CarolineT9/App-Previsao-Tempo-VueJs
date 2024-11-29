@@ -15,7 +15,7 @@ export default function useClima() {
 
     try {
       //obter lat e long
-      const url = `http://api.openweathermap.org/geo/1.0/direct?q=${cidade},${pais}&limit=1&appid=${key}`;
+      const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cidade},${pais}&limit=1&appid=${key}`;
       const {data} = await axios(url)
       const {lat, lon} = data[0]
         
